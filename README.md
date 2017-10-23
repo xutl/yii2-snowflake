@@ -1,5 +1,7 @@
 # yii2-snowflake
 
+Based on the Twitter Snowflake algorithm.
+
 [![Latest Stable Version](https://poser.pugx.org/xutl/yii2-snowflake/v/stable.png)](https://packagist.org/packages/xutl/yii2-snowflake)
 [![Total Downloads](https://poser.pugx.org/xutl/yii2-snowflake/downloads.png)](https://packagist.org/packages/xutl/yii2-snowflake)
 [![Reference Status](https://www.versioneye.com/php/xutl:yii2-snowflake/reference_badge.svg)](https://www.versioneye.com/php/xutl:yii2-snowflake/references)
