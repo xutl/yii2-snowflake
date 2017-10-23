@@ -34,7 +34,7 @@ to the `require` section of your composer.json.
 Add following lines to your main configuration file:
 
 ```php
-'modules' => [
+'components' => [
     'snowflake' => [
         'class' => 'xutl\snowflake\Snowflake',
         'workerId' => 0,
