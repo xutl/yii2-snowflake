@@ -8,6 +8,7 @@
 namespace xutl\snowflake;
 
 use Yii;
+use yii\base\InvalidConfigException;
 use yii\db\BaseActiveRecord;
 use yii\behaviors\AttributeBehavior;
 
@@ -20,7 +21,7 @@ class SnowflakeBehavior extends AttributeBehavior
     /**
      * @var string
      */
-    public $createdAtAttribute = 'id';
+    public $attribute = 'id';
 
     /**
      * @inheritdoc
@@ -34,9 +35,11 @@ class SnowflakeBehavior extends AttributeBehavior
     {
         parent::init();
         if (empty($this->attributes)) {
-            $this->attributes = [
-                BaseActiveRecord::EVENT_BEFORE_INSERT => [$this->createdAtAttribute],
-            ];
+            $this->attributes = [BaseActiveRecord::EVENT_BEFORE_INSERT => [$this->attribute],];
+        }
+
+        if ($this->attribute === null) {
+            throw new InvalidConfigException('Either "attribute" property must be specified.');
         }
     }
 
