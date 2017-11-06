@@ -1,6 +1,6 @@
 # yii2-snowflake
 
-Based on the Twitter Snowflake algorithm.
+适用于 Yii2 的 雪花算法ID生成器。Based on the Twitter Snowflake algorithm.
 
 [![Latest Stable Version](https://poser.pugx.org/xutl/yii2-snowflake/v/stable.png)](https://packagist.org/packages/xutl/yii2-snowflake)
 [![Total Downloads](https://poser.pugx.org/xutl/yii2-snowflake/downloads.png)](https://packagist.org/packages/xutl/yii2-snowflake)
